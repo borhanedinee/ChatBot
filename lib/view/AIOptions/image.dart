@@ -5,7 +5,7 @@ import 'package:nidhal/controller/chatcontroller.dart';
 import 'package:nidhal/view/components/suggestionsitem.dart';
 
 class GenerateImage extends StatelessWidget {
-  var imageFieldController = TextEditingController();
+  final imageFieldController = TextEditingController();
 
   GenerateImage({super.key});
 

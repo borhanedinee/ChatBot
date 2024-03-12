@@ -6,7 +6,7 @@ import 'package:nidhal/view/components/responseitem.dart';
 import 'package:nidhal/view/components/suggestionsitem.dart';
 
 class Chat extends StatelessWidget {
-  var chatiWithAiController = TextEditingController();
+  final chatiWithAiController = TextEditingController();
 
   Chat({super.key});
 

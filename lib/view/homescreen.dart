@@ -8,9 +8,9 @@ import 'AIOptions/chat.dart';
 import 'components/historyitem.dart';
 
 class HomeScreen extends StatelessWidget {
-  int delay = 200;
+  final delay = 200;
 
-  HomeScreen({super.key});
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

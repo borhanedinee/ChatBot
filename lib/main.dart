@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nidhal/controller/chatcontroller.dart';
 import 'package:nidhal/services/apiservices.dart';
 import 'package:nidhal/view/onboarding1.dart';
 import 'package:get/get.dart';

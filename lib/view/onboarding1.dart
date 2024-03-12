@@ -5,25 +5,22 @@ import 'package:nidhal/controller/chatcontroller.dart';
 import 'onboarding2.dart';
 
 class OnBoardingOne extends StatefulWidget {
-    OnBoardingOne({super.key});
+  OnBoardingOne({super.key});
 
   @override
   State<OnBoardingOne> createState() => _OnBoardingOneState();
 }
 
 class _OnBoardingOneState extends State<OnBoardingOne> {
- 
-
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-     ChatController chatController = Get.put(ChatController());
+    ChatController chatController = Get.put(ChatController());
   }
 
   @override
   Widget build(BuildContext context) {
-    
     var size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(

@@ -5,9 +5,9 @@ class HistoryItem extends StatelessWidget {
 
   final String historyText;
   
-  var onPressed;
+  final onPressed;
 
-  HistoryItem({
+  const HistoryItem({
     super.key,
     required this.historyText,
     required this.hitoryTypeIcon,
