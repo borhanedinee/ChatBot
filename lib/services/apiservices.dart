@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'package:nidhal/controller/chatcontroller.dart';
-import 'package:nidhal/secrets.dart';
+import 'package:nidhal/constants.dart';
 
 class APIServices {
   ChatController chatController = Get.put(ChatController());
