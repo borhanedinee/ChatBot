@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nidhal/controller/chatcontroller.dart';
@@ -50,10 +51,12 @@ class Chat extends StatelessWidget {
                                         SizedBox(
                                           height: 300,
                                         ),
-                                        Text(
-                                          'Interacts actively with answers \nin a conversational way.',
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(fontSize: 26),
+                                        SlideInLeft(
+                                          child: Text(
+                                            'Interacts actively with answers \nin a conversational way.',
+                                            textAlign: TextAlign.center,
+                                            style: TextStyle(fontSize: 26),
+                                          ),
                                         ),
                                         SizedBox(
                                           height: 30,
@@ -70,8 +73,11 @@ class Chat extends StatelessWidget {
                                             });
                                             controller.update();
                                           },
-                                          child: SuggestionsItem(
-                                            suggestion: 'Tell a joke',
+                                          child: SlideInLeft(
+                                            duration: Duration(milliseconds: 800 + 150),
+                                            child: SuggestionsItem(
+                                              suggestion: 'Tell a joke',
+                                            ),
                                           ),
                                         ),
                                         GestureDetector(
@@ -86,9 +92,12 @@ class Chat extends StatelessWidget {
                                             });
                                             controller.update();
                                           },
-                                          child: SuggestionsItem(
-                                            suggestion:
-                                                'Creative ideas for a 10 year old’s birthday?',
+                                          child: SlideInLeft(
+                                            duration: Duration(milliseconds: 800 + 300),
+                                            child: SuggestionsItem(
+                                              suggestion:
+                                                  'Creative ideas for a 10 year old’s birthday?',
+                                            ),
                                           ),
                                         ),
                                         GestureDetector(
@@ -103,8 +112,11 @@ class Chat extends StatelessWidget {
                                             });
                                             controller.update();
                                           },
-                                          child: SuggestionsItem(
-                                            suggestion: 'How to master flutter',
+                                          child: SlideInLeft(
+                                            duration: Duration(milliseconds: 800 + 450),
+                                            child: SuggestionsItem(
+                                              suggestion: 'How to master flutter',
+                                            ),
                                           ),
                                         ),
                                       ],

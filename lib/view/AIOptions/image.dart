@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nidhal/controller/chatcontroller.dart';
@@ -47,10 +48,12 @@ class GenerateImage extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     const Spacer(),
-                                    const Text(
-                                      'Let me help you generate \ncreative images.',
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(fontSize: 26),
+                                    SlideInLeft(
+                                      child: const Text(
+                                        'Let me help you generate \ncreative images.',
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(fontSize: 26),
+                                      ),
                                     ),
                                     const SizedBox(
                                       height: 30,
@@ -66,9 +69,12 @@ class GenerateImage extends StatelessWidget {
                                         });
                                         controller.update();
                                       },
-                                      child: const SuggestionsItem(
-                                        suggestion:
-                                            'Generate a digital Illustration of the a purely colourful portrait',
+                                      child: SlideInLeft(
+                                        duration: Duration(milliseconds: 800 + 150),
+                                        child: const SuggestionsItem(
+                                          suggestion:
+                                              'Generate a digital Illustration of the a purely colourful portrait',
+                                        ),
                                       ),
                                     ),
                                     GestureDetector(
@@ -81,9 +87,12 @@ class GenerateImage extends StatelessWidget {
                                             });
                                             controller.update();
                                           },
-                                      child: const SuggestionsItem(
-                                        suggestion:
-                                            'Generate an image of a cat eating sweats',
+                                      child: SlideInLeft(
+                                        duration: Duration(milliseconds: 800 + 300),
+                                        child: const SuggestionsItem(
+                                          suggestion:
+                                              'Generate an image of a cat eating sweats',
+                                        ),
                                       ),
                                     ),
                                     const SizedBox(
