@@ -22,6 +22,7 @@ This Flutter Chatbot App is designed to provide users with an interactive chat e
 
 - Flutter: A cross-platform framework for building native applications.
 - OpenAI API: The AI model used for natural language processing and image generation.
+- Getx as state management.
 
 ## Contributing
 
